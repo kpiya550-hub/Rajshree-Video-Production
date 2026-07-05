@@ -81,3 +81,98 @@ a:hover{
     margin:auto;
 
 }
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    background:#111111;
+
+    border-bottom:1px solid #D4AF37;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo{
+
+    color:#D4AF37;
+
+    font-size:28px;
+
+    font-family:'Cinzel', serif;
+
+    font-weight:bold;
+
+}
+
+.logo span{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    font-size:16px;
+
+    transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#D4AF37;
+
+}
+
+.book-btn{
+
+    background:#D4AF37;
+
+    color:black;
+
+    padding:12px 25px;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+}
+
+.book-btn:hover{
+
+    background:#ffffff;
+
+}
