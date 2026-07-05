@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="admin">
+
+<div class="container">
+
+<h1>Contact Messages</h1>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Phone</th>
+
+<th>Message</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for contact in contacts %}
+
+<tr>
+
+<td>{{ contact.id }}</td>
+
+<td>{{ contact.name }}</td>
+
+<td>{{ contact.email }}</td>
+
+<td>{{ contact.phone }}</td>
+
+<td>{{ contact.message }}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+{% endblock %}

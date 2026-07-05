@@ -5,6 +5,7 @@ from routes.gallery import gallery
 from routes.portfolio import portfolio
 from routes.contact import contact
 from models.contact import db
+from routes.admin import admin
 
 
 app = Flask(__name__)   # Pehle app banao
@@ -17,6 +18,7 @@ app.register_blueprint(services)
 app.register_blueprint(gallery)
 app.register_blueprint(portfolio)
 app.register_blueprint(contact)
+app.register_blueprint(admin)
 with app.app_context():
     db.create_all()
 @app.route("/")
