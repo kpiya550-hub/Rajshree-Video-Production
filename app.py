@@ -7,6 +7,7 @@ from routes.contact import contact
 from models.contact import db
 from routes.admin import admin
 from routes.auth import auth
+from routes.user import user
 
 
 app = Flask(__name__)   # Pehle app banao
@@ -21,6 +22,7 @@ app.register_blueprint(portfolio)
 app.register_blueprint(contact)
 app.register_blueprint(admin)
 app.register_blueprint(auth)
+app.register_blueprint(user)
 with app.app_context():
     db.create_all()
 @app.route("/")
