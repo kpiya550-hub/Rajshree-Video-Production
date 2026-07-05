@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="about">
+
+    <div class="container about-container">
+
+        <div class="about-image">
+
+            <img src="{{ url_for('static', filename='images/about.jpg') }}"
+                 alt="Rajshree Video Production">
+
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-tag">
+                ABOUT US
+            </span>
+
+            <h2>
+                We Create
+                <span>Cinematic Stories</span>
+            </h2>
+
+            <p>
+
+                Rajshree Video Production is a professional film production company specializing in wedding cinematography, commercial advertisements, music videos, documentaries and creative storytelling.
+
+            </p>
+
+            <div class="experience">
+
+                <h3>10+</h3>
+
+                <p>Years of Experience</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="container stats-container">
+
+        <div class="stat-card">
+
+            <h2>500+</h2>
+
+            <p>Wedding Films</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>1000+</h2>
+
+            <p>Happy Clients</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>200+</h2>
+
+            <p>Commercial Ads</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>10+</h2>
+
+            <p>Years Experience</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="portfolio">
+
+    <div class="container">
+
+        <h1 class="portfolio-title">
+            Our Portfolio
+        </h1>
+
+        <p class="portfolio-subtitle">
+            Every project reflects our creativity and passion.
+        </p>
+
+        <div class="portfolio-filter">
+
+            <button class="active">All</button>
+            <button>Wedding</button>
+            <button>Commercial</button>
+            <button>Music Video</button>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            {% for i in range(1,7) %}
+
+            <div class="portfolio-card">
+
+                <img src="{{ url_for('static', filename='images/img' ~ 1 ~ '.jpg') }}"
+                     alt="Portfolio Image">
+
+                <div class="portfolio-overlay">
+
+                    <h3>Rajshree Production</h3>
+
+                    <p>Cinematic Storytelling</p>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

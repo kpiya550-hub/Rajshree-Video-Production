@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+instance/
+*.db
+
+# Environment
+.env
+
+# Videos
+static/videos/
