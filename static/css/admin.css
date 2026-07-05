@@ -53,3 +53,33 @@ tr:hover{
 background:#222;
 
 }
+
+.delete-btn{
+
+background:#c62828;
+
+padding:10px 20px;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+background:#ff0000;
+
+}
+
+.table-responsive{
+
+overflow-x:auto;
+
+}
