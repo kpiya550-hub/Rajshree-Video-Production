@@ -1,0 +1,83 @@
+/* ==========================
+   GOOGLE RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    background:#0B0B0B;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Cinzel',serif;
+
+    color:#D4AF37;
+
+}
+
+/* ==========================
+   PARAGRAPH
+========================== */
+
+p{
+
+    line-height:1.8;
+
+    color:#dddddd;
+
+}
+
+/* ==========================
+   LINK
+========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:#D4AF37;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
