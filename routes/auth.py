@@ -1,21 +1,26 @@
 from flask import Blueprint, render_template, request, redirect, session
+from werkzeug.security import check_password_hash
+from models.user import User
 
 auth = Blueprint("auth", __name__)
-
-USERNAME = "admin"
-PASSWORD = "rajshree123"
 
 @auth.route("/login", methods=["GET", "POST"])
 def login():
 
     if request.method == "POST":
 
-        username = request.form["username"]
+        login_input = request.form["username"]
         password = request.form["password"]
 
-        if username == USERNAME and password == PASSWORD:
+        user = User.query.filter(
+            (User.username == login_input) |
+            (User.email == login_input) |
+            (User.mobile == login_input)
+        ).first()
+
+        if user and check_password_hash(user.password, password):
             session["admin"] = True
-            return redirect("/admin")
+            return redirect("/")
 
         return render_template(
             "login.html",

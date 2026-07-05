@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, redirect
 from models.contact import db
 from models.user import User
+from werkzeug.security import generate_password_hash
 
 user = Blueprint("user", __name__)
 
@@ -14,7 +15,7 @@ def register():
             username=request.form["username"],
             email=request.form["email"],
             mobile=request.form["mobile"],
-            password=request.form["password"]
+            password=generate_password_hash(request.form["password"])
         )
 
         db.session.add(new_user)
